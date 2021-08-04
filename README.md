@@ -1,6 +1,9 @@
 # Neural-Network-With-One-Hidden-Layer
 In this Project a 2-class classification neural network with a single hidden layer is implemented. Using units with a non-linear activation function, such as tanh(hyper-tan). Then computing the cross entropy loss followed by the forward and backward propagation used to update the parameter using the Gradient Descent Algorithm .
 
+- a numpy-array (matrix) X that contains your features (x1, x2)
+- a numpy-array (vector) Y that contains your labels (red:0, blue:1).
+
 ## shape
 The shape of X is: (2, 200)
 The shape of Y is: (1, 200)
@@ -58,7 +61,7 @@ Interpretation: The dataset is not linearly separable, so logistic regression do
     parameters -- python dictionary containing updated parameters 
     """
     
-# Hyper-Parameter Tuning 
+## Hyper-Parameter Tuning 
 We can take tune hidden_layer_sizes  by taking a range of values and check the accuracy for it and choose the best fit 
 eg: for i, n_h in enumerate(hidden_layer_sizes):
     parameters = nn_model(X, Y, n_h, num_iterations = 5000)
